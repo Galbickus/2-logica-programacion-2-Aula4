@@ -121,18 +121,22 @@ encontrarMayorMenor(numeros);
 
 // 8.  Crea una función que devuelva la suma de todos los elementos en una lista.
 
-let listaDeNumeros2 = [10,20,30,40,50,60,70,80,90];
+let listaDeNumeros2 =[]; //harcodeados[10,20,30,40,50,60,70,80,90];
 let sumaArray = 0;
 
 function sumarArray(){
-    for (let i = 0; i < listaDeNumeros2.length; i++) {
+    //con un for para cargar un Array de 10 posiciones con números generados Random
+    for (let i = 0; i < 10; i++) {
+        let numeroRandom = Math.floor(Math.random()*10)+1;
+        console.log(numeroRandom);
+        listaDeNumeros2.push(numeroRandom);
         sumaArray = sumaArray + listaDeNumeros2[i];
     }
-
     return sumaArray;
 };
 
 //llamada a la f(x)
 let resultado2 = sumarArray();
+console.log(listaDeNumeros2);
 console.log(resultado2);
   
