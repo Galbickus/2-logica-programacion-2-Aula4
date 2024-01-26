@@ -15,10 +15,11 @@ Desafíos
 10. Crea una función que reciba dos listas de números del mismo tamaño y devuelva una nueva lista con la suma de los elementos uno a uno.
 11. Crea una función que reciba una lista de números y devuelva una nueva lista con el cuadrado de cada número. */
 
-//1.  Crea una lista vacía llamada "listaGenerica".
-/*
-let listaGenerica = [];
+/*---------------
 
+//1.  Crea una lista vacía llamada "listaGenerica".
+
+let listaGenerica = [];
 console.log(listaGenerica);
 
 //2.  Crea una lista de lenguajes de programación llamada
@@ -117,7 +118,7 @@ let numeros = [15, 8, 25, 5, 12];
 
 // Llamada a la función encontrarMayorMenor pasando el array numeros como argumento
 encontrarMayorMenor(numeros);
--------------------*/
+
 
 // 8.  Crea una función que devuelva la suma de todos los elementos en una lista.
 
@@ -139,4 +140,41 @@ function sumarArray(){
 let resultado2 = sumarArray();
 console.log(listaDeNumeros2);
 console.log(resultado2);
-  
+--------------------------*/
+//9.  Crea una función que devuelva la posición en la lista donde se encuentra
+// un elemento pasado como parámetro, o -1 si no existe en la lista.
+
+let listaDeNumeros9 =[]; 
+let numeroBuscado = Math.floor(Math.random()*10)+1;
+console.log(`El numeroBuscado es: ${numeroBuscado}`);
+//funcion carga un Array de 10 posiciones con numeros random de 1 a 1
+//y devuelve la lista cargada
+function cargaElementos(){
+        for (let i = 0; i < 10; i++) {
+            let numeroRandomAAgregar = Math.floor(Math.random()*10)+1;
+            console.log(numeroRandomAAgregar);
+            listaDeNumeros9.push(numeroRandomAAgregar);
+        }
+        return listaDeNumeros9;
+}
+//funcion de busqueda, recibe un array de 10 numeros y busca el "numero buscado
+//devolviendo su posicion en caso afirmativo o (-1) en caso n- 
+function buscarElemento(numeroBuscado, listaDeNumeros9){
+    //for para buscar el elemento y si lo encuentra devolver la primera posicion donde está
+    //uso break por si está más de una vez
+    for (let i = 0; i < listaDeNumeros9.length; i++) {
+        if(listaDeNumeros9[i] == numeroBuscado){
+            return i;  //devuelve el indice del elemento encontrado
+            //no necesito poner breack porque el return corta el ciclo
+        }
+    }
+    return -1;  //en caso que no encuentre el elemento
+};
+
+//llamada a la f(x)
+cargaElementos();
+console.log(listaDeNumeros9);
+////le sumo 1 porque la función devuelve el índice y me pide la posición
+let posicion = buscarElemento(numeroBuscado, listaDeNumeros9) + 1; 
+console.log(`La posición del elemento ${numeroBuscado} es ${posicion} en la Lista.`);
+
