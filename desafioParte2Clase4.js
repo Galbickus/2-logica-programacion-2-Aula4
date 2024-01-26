@@ -185,21 +185,34 @@ let posicion = buscarElemento(numeroBuscado, listaDeNumeros9) + 1;
 let lista1 = [];
 let lista2 = [];
 let listaSuma1y2 = [];
-//for carga las 3 listas simultaneamente  
+//for carga las 2 listas simultaneamente  
 //las 2 primeras con 6 elementos random entre 1 y 4 
 function cargaListas(){
     for(let i = 0; i < 6; i++){
         lista1[i] = Math.floor(Math.random()*4)+1;
         lista2[i] = Math.floor(Math.random()*4)+1;
-        listaSuma1y2[i] = lista1[i] + lista2[i];
     }
     return;
 };
+
+function sumarListas1y2(lista1, lista2){
+    for(let i = 0; i < 6; i++){
+        listaSuma1y2[i] = lista1[i] + lista2[i];
+    }
+    return listaSuma1y2;
+}
 //llamados
 cargaListas();
+sumarListas1y2(lista1, lista2);
 console.log(lista1);
 console.log(lista2);
 console.log(listaSuma1y2);
+
+//11. Crea una función que reciba una lista de números y
+// devuelva una nueva lista con el cuadrado de cada número. */
+
+let listaOriginal = [];
+let listaElevada = [];
 
 
 
