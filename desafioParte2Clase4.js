@@ -176,5 +176,5 @@ cargaElementos();
 console.log(listaDeNumeros9);
 ////le sumo 1 porque la función devuelve el índice y me pide la posición
 let posicion = buscarElemento(numeroBuscado, listaDeNumeros9) + 1; 
-console.log(`La posición del elemento ${numeroBuscado} es ${posicion} en la Lista.`);
+console.log(`La posición del elemento ${numeroBuscado} es ${(posicion == 0 ? "-1 (no está)": posicion)} en la Lista.`);
 
