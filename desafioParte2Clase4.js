@@ -16,7 +16,7 @@ Desafíos
 11. Crea una función que reciba una lista de números y devuelva una nueva lista con el cuadrado de cada número. */
 
 //1.  Crea una lista vacía llamada "listaGenerica".
-
+/*
 let listaGenerica = [];
 
 console.log(listaGenerica);
@@ -117,3 +117,22 @@ let numeros = [15, 8, 25, 5, 12];
 
 // Llamada a la función encontrarMayorMenor pasando el array numeros como argumento
 encontrarMayorMenor(numeros);
+-------------------*/
+
+// 8.  Crea una función que devuelva la suma de todos los elementos en una lista.
+
+let listaDeNumeros2 = [10,20,30,40,50,60,70,80,90];
+let sumaArray = 0;
+
+function sumarArray(){
+    for (let i = 0; i < listaDeNumeros2.length; i++) {
+        sumaArray = sumaArray + listaDeNumeros2[i];
+    }
+
+    return sumaArray;
+};
+
+//llamada a la f(x)
+let resultado2 = sumarArray();
+console.log(resultado2);
+  
