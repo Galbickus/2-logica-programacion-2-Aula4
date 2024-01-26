@@ -122,7 +122,7 @@ encontrarMayorMenor(numeros);
 
 // 8.  Crea una función que devuelva la suma de todos los elementos en una lista.
 
-let listaDeNumeros2 =[]; //harcodeados[10,20,30,40,50,60,70,80,90];
+let listaDeNumeros2 =[]; //hardcodeados[10,20,30,40,50,60,70,80,90];
 let sumaArray = 0;
 
 function sumarArray(){
@@ -178,7 +178,7 @@ console.log(listaDeNumeros9);
 ////le sumo 1 porque la función devuelve el índice y me pide la posición
 let posicion = buscarElemento(numeroBuscado, listaDeNumeros9) + 1; 
 
---------------------------*/
+
 //10. Crea una función que reciba dos listas de números del mismo tamaño y
 // devuelva una nueva lista con la suma de los elementos uno a uno.
 
@@ -194,7 +194,6 @@ function cargaListas(){
     }
     return;
 };
-
 function sumarListas1y2(lista1, lista2){
     for(let i = 0; i < 6; i++){
         listaSuma1y2[i] = lista1[i] + lista2[i];
@@ -208,11 +207,34 @@ console.log(lista1);
 console.log(lista2);
 console.log(listaSuma1y2);
 
+--------------------------*/
+
 //11. Crea una función que reciba una lista de números y
-// devuelva una nueva lista con el cuadrado de cada número. */
+// devuelva una nueva lista con el cuadrado de cada número. 
 
 let listaOriginal = [];
 let listaElevada = [];
 
+function generarLista(){
+    for(let i = 0; i < 6; i++){
+        listaOriginal[i] = Math.floor(Math.random()*10)+1;
+    }
+    return listaOriginal;
+}
+function elevar(listaOriginal){
 
+    for(let i = 0; i<6; i++){
+        listaElevada[i] = listaOriginal[i] * listaOriginal[i]; 
+    }
+
+    return listaElevada;
+    
+}
+
+//llamados a las f(x)
+
+generarLista();
+elevar(listaOriginal);
+console.log(listaOriginal);
+console.log(listaElevada);
 
