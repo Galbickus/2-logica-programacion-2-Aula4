@@ -140,7 +140,9 @@ function sumarArray(){
 let resultado2 = sumarArray();
 console.log(listaDeNumeros2);
 console.log(resultado2);
---------------------------*/
+
+--------------------------
+
 //9.  Crea una función que devuelva la posición en la lista donde se encuentra
 // un elemento pasado como parámetro, o -1 si no existe en la lista.
 
@@ -170,11 +172,34 @@ function buscarElemento(numeroBuscado, listaDeNumeros9){
     }
     return -1;  //en caso que no encuentre el elemento
 };
-
 //llamada a la f(x)
 cargaElementos();
 console.log(listaDeNumeros9);
 ////le sumo 1 porque la función devuelve el índice y me pide la posición
 let posicion = buscarElemento(numeroBuscado, listaDeNumeros9) + 1; 
-console.log(`La posición del elemento ${numeroBuscado} es ${(posicion == 0 ? "-1 (no está)": posicion)} en la Lista.`);
+
+--------------------------*/
+//10. Crea una función que reciba dos listas de números del mismo tamaño y
+// devuelva una nueva lista con la suma de los elementos uno a uno.
+
+let lista1 = [];
+let lista2 = [];
+let listaSuma1y2 = [];
+//for carga las 3 listas simultaneamente  
+//las 2 primeras con 6 elementos random entre 1 y 4 
+function cargaListas(){
+    for(let i = 0; i < 6; i++){
+        lista1[i] = Math.floor(Math.random()*4)+1;
+        lista2[i] = Math.floor(Math.random()*4)+1;
+        listaSuma1y2[i] = lista1[i] + lista2[i];
+    }
+    return;
+};
+//llamados
+cargaListas();
+console.log(lista1);
+console.log(lista2);
+console.log(listaSuma1y2);
+
+
 
