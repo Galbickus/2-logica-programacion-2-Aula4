@@ -15,7 +15,7 @@ Desafíos
 10. Crea una función que reciba dos listas de números del mismo tamaño y devuelva una nueva lista con la suma de los elementos uno a uno.
 11. Crea una función que reciba una lista de números y devuelva una nueva lista con el cuadrado de cada número. */
 
-/*---------------
+
 
 //1.  Crea una lista vacía llamada "listaGenerica".
 
@@ -141,7 +141,7 @@ let resultado2 = sumarArray();
 console.log(listaDeNumeros2);
 console.log(resultado2);
 
---------------------------
+
 
 //9.  Crea una función que devuelva la posición en la lista donde se encuentra
 // un elemento pasado como parámetro, o -1 si no existe en la lista.
@@ -207,7 +207,7 @@ console.log(lista1);
 console.log(lista2);
 console.log(listaSuma1y2);
 
---------------------------*/
+
 
 //11. Crea una función que reciba una lista de números y
 // devuelva una nueva lista con el cuadrado de cada número. 
@@ -227,12 +227,9 @@ function elevar(listaOriginal){
         listaElevada[i] = listaOriginal[i] * listaOriginal[i]; 
     }
 
-    return listaElevada;
-    
+    return listaElevada;   
 }
-
 //llamados a las f(x)
-
 generarLista();
 elevar(listaOriginal);
 console.log(listaOriginal);
